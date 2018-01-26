@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slack Tweet Chat</title>
+	</head>
+	<body>
+		<form action="/" method="POST">
+			<label>Please enter your hashtag:</label>
+			<input type="text" name="hashtag">
+			<button type="submit">Find</button>
+			<% if (err_message) { %>
+			<span style="color:crimson"><%= err_message %></span>
+			<% } %>
+		</form>
+	</body>
+</html>
